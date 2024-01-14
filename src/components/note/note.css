@@ -1,0 +1,25 @@
+.note-container {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 3px 0;
+  box-shadow: 0 2px 10px #0000000f;
+}
+
+.note-container div {
+  display: flex;
+  padding: 5px 10px;
+  border-bottom: 2px solid #eee;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-container p {
+  padding: 0px 10px 10px;
+}
+
+.note-container div button {
+  border: none;
+  background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+}

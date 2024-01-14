@@ -1,1 +1,47 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+.notes-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex-grow: 1;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #eee;
+}
+
+.input-container input:focus-visible {
+  outline: none;
+}
+
+.input-container button {
+  flex-grow: 0;
+  flex-basis: 200px;
+  flex-shrink: 0;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid #eee;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.empty-container {
+  text-align: center;
+}

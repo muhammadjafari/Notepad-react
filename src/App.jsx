@@ -1,6 +1,4 @@
-import { useEffect, useState, useRef } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useRef } from "react";
 import "./App.css";
 import Note from "./components/note/note";
 import { useSelector, useDispatch } from "react-redux";
@@ -19,8 +17,8 @@ function App() {
 
   if (notes.length == 0) {
     notesContainer = (
-      <div>
-        <p>empty</p>
+      <div className="empty-container">
+        <h3>empty</h3>
       </div>
     );
   } else {
@@ -31,10 +29,14 @@ function App() {
 
   return (
     <>
-      <div>
-        <div>
-          <input type="text" ref={inputValue} />
-          <button onClick={onclickHandler}>add</button>
+      <div className="notes-container">
+        <div className="input-container">
+          <input
+            type="text"
+            placeholder="write your note here ..."
+            ref={inputValue}
+          />
+          <button onClick={onclickHandler}>ADD NOTE</button>
         </div>
         <div>{notesContainer}</div>
       </div>
